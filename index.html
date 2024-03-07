@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;justify-content: center;width: 100%;height: 90vh;align-items: center;">
+    <div style="width: 400px;height: 400px;background: rgb(0, 0, 0);color: rgb(255, 255, 255);text-align: center;">
+    <h1>counter</h1>   
+    <button onclick="increment()">increment</button> 
+    <h1 id="counterDisplay">0</h1>
+    <button onclick="decrement()">decrement</button>
+    </div>
+    </div>
+    <pre>Muhammed suhaib</pre>
+    <script>
+      let count = 0;
+
+function updateDisplay() {
+  document.getElementById('counterDisplay').innerText = count;
+}
+
+function increment() {
+  count++;
+  updateDisplay();
+}
+
+function decrement() {
+  if (count > 0) {
+    count--;
+    updateDisplay();
+  }
+}
+       
+    </script>
+</body>
+</html>
